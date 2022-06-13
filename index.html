@@ -4,32 +4,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <img src="car.jpg" alt="car" id="car" />
-    <div class="main-page">
-      <p>
-        This is not a real online service! Lorem ipsum dolor sit, amet
-        consectetur adipisicing elit. Iusto, ex quam unde vitae sit inventore
-        similique error eum doloremque? Nostrum quo deleniti obcaecati labore
-        quos ut quae repellendus odit ipsam.
-      </p>
-      <p>You know what to do.</p>
+    <div class="webpage">
+      <img src="car.jpg" alt="car" id="car" />
+      <div class="main-page">
+        <div class="upper-text">
+          <p>
+            This is not a real online service! Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Iusto, ex quam unde vitae sit
+            inventore similique error eum doloremque? Nostrum quo deleniti
+            obcaecati labore quos ut quae repellendus odit ipsam.
+          </p>
+          <p>You know what to do.</p>
+        </div>
 
-      <div class="inputs">
-        First Name<input type="text" placeholder="Bob" />
+        <form action="">
+          <div class="form">
+            <div class="input">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="Bob"
+                required
+              />
+            </div>
 
-        Last Name<input type="text" placeholder="Thompson" />
+            <div class="input">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Thompson"
+                required
+              />
+            </div>
 
-        Email<input type="text" placeholder="enteryouremail@gmail.com" />
+            <div class="input">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="youremail@gmail.com"
+                required
+              />
+            </div>
 
-        Phone Number<input type="text" placeholder="000-000-0000" />
+            <div class="input">
+              <label for="phone-number">Phone Number</label>
+              <input
+                type="text"
+                name="phone-number"
+                id="phone-number"
+                placeholder="000-000-000"
+                required
+              />
+            </div>
 
-        Password<input type="text" />
+            <div class="input">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" required />
+            </div>
 
-        Confirm Password<input type="text" />
+            <div class="input">
+              <label for="confirm-password">Confrim Password</label>
+              <input type="password" name="confirm-password""
+              id="confirm-password"" required />
+            </div>
+          </div>
+
+          <div class="footer">
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+          </div>
+        </form>
       </div>
     </div>
   </body>

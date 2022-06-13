@@ -128,9 +128,90 @@ table {
   border-spacing: 0;
 }
 
-/*Page styling starts here!*/
+/*--- Page styling starts here! ---*/
 
+.webpage {
+  display: flex;
+  flex-flow: row wrap;
+  font-family: "Arvo", serif;
+}
+
+/* Left side */
 #car {
-  width: 25%;
-  height: auto;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 40vw;
+}
+
+/* Right side */
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.main-page {
+  width: 60vw;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.upper-text p {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.25);
+  gap: 20px;
+}
+
+.input {
+  display: flex;
+  flex-flow: column wrap;
+  width: 90%;
+}
+
+.footer {
+  margin-left: 30px;
+}
+
+button {
+  background-color: rgb(36, 36, 175);
+  color: white;
+  border: solid 1px rgb(2, 2, 113);
+  border-radius: 3px;
+  padding: 10px;
+  font-family: "Arvo", serif;
+  width: 200px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(36, 36, 175, 0.75);
+  border: solid 1px rgb(2, 2, 113, 0.5);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(36, 36, 175);
+}
+
+a:hover {
+  color: rgba(36, 36, 175, 0.5);
 }
